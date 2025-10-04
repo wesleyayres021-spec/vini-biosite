@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vini_duCorte • BioSite</title>
+  <meta name="description" content="Agende seu corte com Vini_duCorte. WhatsApp, localização e Instagram." />
+  <link rel="icon" href="favicon.svg">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#0b0b0b;
+      --card:#131316;
+      --accent:#7a4bff;
+      --muted:#bfbdbf;
+      --text:#ffffff;
+      --radius:18px;
+      --maxw:600px;
+      --shadow:0 16px 40px rgba(0,0,0,.38);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+      color:var(--text);
+      background: radial-gradient(1100px 620px at 50% -10%, rgba(122,75,255,.12), transparent 60%), var(--bg);
+      display:flex; align-items:center; justify-content:center;
+      padding:34px 16px;
+    }
+    .card{
+      width:100%;
+      max-width:var(--maxw);
+      background:linear-gradient(180deg,rgba(255,255,255,.02),rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.07);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:26px 22px 20px;
+      text-align:center;
+      backdrop-filter: blur(6px);
+    }
+    .logo-wrap{
+      width:220px; height:220px;
+      margin:2px auto 10px;
+      padding:18px;
+      border-radius:28px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.02));
+      border:1px solid rgba(255,255,255,0.08);
+      display:flex; align-items:center; justify-content:center;
+      box-shadow: 0 10px 30px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.03);
+    }
+    .logo{
+      max-width:100%; max-height:100%;
+      object-fit: contain;
+      display:block;
+      filter: drop-shadow(0 8px 22px rgba(122,75,255,.35));
+    }
+    h1{margin:8px 0 6px; font-size:30px; letter-spacing:.3px; color:#fff}
+    p.tag{margin:0 0 22px; color:var(--muted)}
+    .links{ display:grid; gap:14px; margin: 18px 0 10px;}
+    .btn{ display:block; padding:15px 16px; border-radius:14px; text-decoration:none; font-weight:800; box-shadow:0 8px 22px rgba(0,0,0,0.52), inset 0 -2px 0 rgba(0,0,0,0.18); transition:transform .12s ease, box-shadow .12s ease;}
+    .btn:active{ transform:translateY(1px) }
+    .btn.whatsapp{background:#25D366; color:#000;}
+    .btn.maps{background:linear-gradient(90deg,#7a4bff,#4b2bff); color:#fff;}
+    .btn.ig{
+      color:#fff;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 6%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      border:1px solid rgba(255,255,255,0.10);
+    }
+    footer{ color:rgba(255,255,255,.52); font-size:12px; margin-top:18px; text-align:center }
+    .small{font-size:13px; color:var(--muted); margin-top:12px; text-align:center}
+    @media (max-width:420px){
+      .logo-wrap{ width:200px; height:200px; padding:16px; }
+      h1{font-size:26px}
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <div class="logo-wrap">
+      <img src="logo.svg" alt="Logo" class="logo">
+    </div>
+    <h1>Vini_duCorte</h1>
+    <p class="tag">Estilo, confiança e precisão em cada corte</p>
+
+    <div class="links">
+      <a class="btn whatsapp" href="https://wa.me/5541998815125" target="_blank">💬 WhatsApp</a>
+      <a class="btn maps" href="https://www.google.com/maps/place/Barbearia+Mustache+-+Itaperu%C3%A7u/@-25.2178148,-49.3545617,17z/data=!3m1!4b1!4m6!3m5!1s0x94dcd9e34174f4d1:0x8ef22ac8b61b061e!8m2!3d-25.2178148!4d-49.3519868!16s%2Fg%2F11xfft0br4?entry=ttu&g_ep=EgoyMDI1MDkzMC4wIKXMDSoASAFQAw%3D%3D" target="_blank">📍 Localização</a>
+      <a class="btn ig" href="https://www.instagram.com/vini_barberr_/" target="_blank">📸 Instagram</a>
+    </div>
+
+    <div class="small">Toque no WhatsApp para agendar em segundos.</div>
+    <footer>© <script>document.write(new Date().getFullYear())</script> Vini_duCorte — Todos os direitos reservados</footer>
+  </div>
+</body>
+</html>
